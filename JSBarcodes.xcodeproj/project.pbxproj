@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AB60ED702CDCCD96009395A7 /* CoreXLSX in Frameworks */ = {isa = PBXBuildFile; productRef = AB60ED6F2CDCCD96009395A7 /* CoreXLSX */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		ABAE9D2E2CDB4D7B005EA3A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		ABAE9D372CDB4D7B005EA3A1 /* JSBarcodesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSBarcodesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AB129CD42CDCD060008A99A3 /* Exceptions for "JSBarcodes" folder in "JSBarcodes" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Preview Content/Preview Assets.xcassets",
+			);
+			target = ABAE9D1C2CDB4D7B005EA3A1 /* JSBarcodes */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		ABAE9D1F2CDB4D7B005EA3A1 /* JSBarcodes */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AB129CD42CDCD060008A99A3 /* Exceptions for "JSBarcodes" folder in "JSBarcodes" target */,
+			);
 			path = JSBarcodes;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB60ED702CDCCD96009395A7 /* CoreXLSX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +96,7 @@
 				ABAE9D1F2CDB4D7B005EA3A1 /* JSBarcodes */,
 				ABAE9D302CDB4D7B005EA3A1 /* JSBarcodesTests */,
 				ABAE9D3A2CDB4D7B005EA3A1 /* JSBarcodesUITests */,
+				ABAE9D4D2CDB5269005EA3A1 /* Frameworks */,
 				ABAE9D1E2CDB4D7B005EA3A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +109,13 @@
 				ABAE9D372CDB4D7B005EA3A1 /* JSBarcodesUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		ABAE9D4D2CDB5269005EA3A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +138,7 @@
 			);
 			name = JSBarcodes;
 			packageProductDependencies = (
+				AB60ED6F2CDCCD96009395A7 /* CoreXLSX */,
 			);
 			productName = JSBarcodes;
 			productReference = ABAE9D1D2CDB4D7B005EA3A1 /* JSBarcodes.app */;
@@ -195,6 +222,9 @@
 			);
 			mainGroup = ABAE9D142CDB4D7B005EA3A1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AB60ED6E2CDCCD82009395A7 /* XCRemoteSwiftPackageReference "CoreXLSX" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = ABAE9D1E2CDB4D7B005EA3A1 /* Products */;
 			projectDirPath = "";
@@ -399,11 +429,13 @@
 				DEVELOPMENT_TEAM = ZJ7C2RH66U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JSBarcodes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,11 +460,13 @@
 				DEVELOPMENT_TEAM = ZJ7C2RH66U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JSBarcodes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +592,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB60ED6E2CDCCD82009395A7 /* XCRemoteSwiftPackageReference "CoreXLSX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CoreOffice/CoreXLSX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB60ED6F2CDCCD96009395A7 /* CoreXLSX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB60ED6E2CDCCD82009395A7 /* XCRemoteSwiftPackageReference "CoreXLSX" */;
+			productName = CoreXLSX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ABAE9D152CDB4D7B005EA3A1 /* Project object */;
 }
